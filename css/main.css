@@ -1,0 +1,979 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  outline: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0px !important;
+}
+.wrapper-top-site {
+  height: 100vh;
+}
+.top-site {
+  background-color: #0e1a35;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10%;
+  height: 15vh;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+}
+.main-nav .main-nav__item {
+  margin-left: 51px;
+}
+.main-nav .main-nav__item a {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.login-button {
+  width: 130px;
+  height: 48px;
+  border: 1px solid #233a72;
+  border-radius: 48px;
+  color: #5584ff;
+}
+.main-nav__mobile {
+  display: none;
+}
+.btn__drop-menu {
+  width: 50px;
+  height: 30px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5;
+  /* cursor: pointer; */
+  padding-top: 14px;
+  margin-left: 30px;
+}
+.btn__drop-menu span,
+.btn__drop-menu span::before,
+.btn__drop-menu span::after {
+  position: absolute;
+  width: inherit;
+  left: 0px;
+  height: 4px;
+  background-color: #ffffff;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.btn__drop-menu span::before,
+.btn__drop-menu span::after {
+  content: "";
+  transition: 1s;
+}
+.btn__drop-menu span::before {
+  -webkit-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+.btn__drop-menu span::after {
+  -webkit-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.btn__drop-menu_active span {
+  height: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  transition: 0.8s;
+}
+.btn__drop-menu_active span::before {
+  transform: rotate(45deg);
+}
+.btn__drop-menu_active span::after {
+  transform: rotate(-45deg);
+}
+
+.wrapper__drop-menu {
+  position: fixed;
+  right: -25vw;
+  background-color: #0e1a35;
+  width: 25vw;
+  height: 100%;
+  z-index: 100;
+  transition: 1s;
+}
+.wrapper__drop-menu_active {
+  right: 0vw !important;
+}
+.drop-menu__item a {
+  font-size: 24px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.home {
+  background: url(https://picua.org/images/2019/12/24/e7fc580f60a1320b967c724c2307c12f.png)
+    no-repeat;
+  background-position: center -95%;
+  background-size: 100% 90%;
+  width: 100%;
+  height: 100%;
+  padding-top: 15%;
+  text-align: center;
+  position: relative;
+}
+.home .main-title {
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: 250;
+  padding-bottom: 10px !important;
+}
+.main-subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  color: #8492af;
+}
+.main-btn {
+  width: 204px;
+  height: 48px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 24px;
+  background-color: #5584ff;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.faetures {
+  margin-top: 15px;
+  /* padding: 0px 0px 0px 13%; */
+  height: 100vh;
+}
+.opportunities {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 13%;
+  /* padding-bottom: 50px; */
+  height: 40vh;
+}
+.item-opportunities {
+  text-align: center;
+  width: 33.3%;
+  position: relative;
+}
+.item-opportunities:nth-child(2)::before,
+.item-opportunities:nth-child(2)::after {
+  content: "";
+  background-color: #dadee7;
+  position: absolute;
+  top: 20px;
+  width: 40%;
+  height: 1px;
+}
+.item-opportunities:nth-child(2)::before {
+  left: -60px;
+}
+.item-opportunities:nth-child(2)::after {
+  right: -60px;
+}
+.item-opportunities img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.item-opportunities__title {
+  font-size: 20px;
+  color: #0e1a35;
+  margin-bottom: 10px;
+}
+.text {
+  font-size: 16px;
+  color: #8492af;
+  margin-bottom: 20px;
+}
+.item-opportunities__btn {
+  width: 55%;
+  height: 50px;
+  border: 1px solid #dadee7;
+  border-radius: 50px;
+}
+.browser {
+  display: flex;
+  height: 60vh;
+  padding: 0 0 0 13%;
+}
+.browser-description {
+  width: 40%;
+}
+.section__title {
+  font-size: 40px;
+  color: #0e1a35;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.browser-img {
+  width: 60%;
+}
+.browser-img img {
+  width: 100%;
+  height: 100%;
+}
+.browser-description__list li {
+  color: #5584ff;
+  position: relative;
+  margin-bottom: 25px;
+}
+.browser-description__list li::before {
+  content: "";
+  position: absolute;
+  background: url(https://picua.org/images/2019/12/24/afb8b0ae0dbf0f30e6d41fbe78d668f5.png);
+  top: -5px;
+  left: -35px;
+  width: 28px;
+  height: 28px;
+}
+.drag-end-drop {
+  background-color: #0e1a35;
+  /* width: 100%; */
+  height: 75vh;
+  max-height: 650px;
+}
+
+.drag-end-drop__wrapper {
+  padding: 80px 0 0 0;
+  background-image: url(https://picua.org/images/2019/12/24/a9b0248cbfdf9df26b00f467b7e36435.png);
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+}
+.drag-end-drop__description {
+  padding: 35px 0px 0 40px;
+  width: 40%;
+  order: 2;
+}
+.drag-end-drop__description .section__title {
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-weight: 250;
+}
+.task-wrapper {
+  order: 1;
+  display: flex;
+  padding-left: 50px;
+  width: 60%;
+}
+.progres,
+.completed {
+  width: 50%;
+}
+.completed {
+  margin-left: 30px;
+}
+.progres-title,
+.completed-title {
+  margin-bottom: 30px;
+  font-size: 31px;
+  line-height: 12px;
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+}
+.progres-title::before,
+.completed-title::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://picua.org/images/2019/12/28/ab91c2fadcde56bcd6db0060683b94a7.png);
+  width: 14px;
+  height: 23px;
+  right: 0px;
+}
+
+.task-box {
+  background-color: #ffffff;
+  display: flex;
+  /* justify-content:/ space-between; */
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  transition: margin 0.5s;
+
+  /* transition-property: ; */
+  /* transition: heigth 1s; */
+}
+.leter {
+  background-color: #5584ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  margin-right: 10px;
+}
+.leter span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -6px;
+}
+.task-info {
+  width: 70%;
+}
+.task-info .task-info__text {
+  font-size: 15px;
+  font-weight: 600;
+}
+.task-info .task-info__time-completion {
+  font-size: 13px;
+  color: #8391ae;
+  margin-left: 20px;
+  position: relative;
+}
+.task-box:nth-child(4) .task-info .task-info__time-completion {
+  color: #f83c7b;
+}
+.task-info .task-info__time-completion::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  left: -20px;
+}
+.progres .task-info .task-info__time-completion::before {
+  background-image: url(https://picua.org/images/2019/12/28/cacf449fc504a431e6bbaafb162ae8d1.png);
+}
+.progres .task-box:nth-child(4) .task-info .task-info__time-completion::before {
+  background-image: url(https://picua.org/images/2019/12/28/5ba2ac95d8e6a3b63fbb664f780ad572.png);
+}
+.completed .task-info .task-info__time-completion::before {
+  background-image: url(https://picua.org/images/2019/12/28/c00f6cb00943b1cd1a4f5ab534b1445f.png);
+}
+.task-box:hover {
+  margin-top: 20px !important;
+  margin-left: 10px !important;
+}
+.elips-list {
+  margin: 0px;
+  padding: 0px;
+}
+.item-elips-list {
+  width: 6px;
+  height: 6px;
+  background-color: #8492af;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+.task-box_done {
+  border: 3px dotted #4f5d7d;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-box_done .text {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.powerfull {
+  height: 100vh;
+}
+.powerfull__description {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.powerfull__description .section__title {
+  margin-bottom: 30px;
+}
+.powerfull__content {
+  background: url(https://picua.org/images/2019/12/27/4829b0f49c2aef059270b83c134ad8f9.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 70%;
+  height: 74vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.powerfull__block-info {
+  position: relative;
+  top: 15%;
+  width: 45%;
+  height: 100px;
+}
+.powerfull__block-info::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #5584ff;
+  border: 8px solid #99b5ff;
+  border-radius: 23px;
+  top: -1px;
+  right: -15px;
+}
+.powerfull__block-info:nth-child(2) {
+  text-align: right;
+  top: 60%;
+}
+.powerfull__block-info:nth-child(2)::before {
+  top: -1px;
+  left: -15px;
+}
+.powerfull__block-info__title {
+  position: relative;
+  border-bottom: 3px solid #5584ff;
+}
+.powerfull__text {
+  padding: 10px 50% 0px 0%;
+}
+.powerfull__block-info:nth-child(2) .powerfull__text {
+  padding: 10px 0% 0px 50%;
+}
+.powerfull__text .text {
+  line-height: 30px;
+}
+.price {
+  padding: 30px 0px 0px 0px;
+  height: 90vh;
+}
+.price .section__title {
+  text-align: center;
+}
+.wrapper__plan-card {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  height: 60%;
+}
+
+.plan-card {
+  width: 20%;
+  height: 90%;
+  max-width: 333px;
+  max-height: 425px;
+  margin-right: 50px;
+  padding-top: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(158, 156, 158, 1);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(158, 156, 158, 1);
+  box-shadow: 0px 0px 17px 0px rgba(158, 156, 158, 1);
+}
+.plan-card:last-child {
+  margin-right: 0px;
+}
+.plan-card__title {
+  font-size: 24px;
+  color: #0e1a35;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.plan-card__price {
+  font-size: 52px;
+  color: #0e1a35;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.plan-card__price_mon {
+  font-size: 24px;
+  line-height: 36px;
+  color: #8492af;
+  font-weight: 400;
+}
+.filling-plan {
+  margin-left: 10px;
+  padding: 0px;
+}
+.item__filling-plan {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #8492af;
+  font-weight: 400;
+  position: relative;
+}
+.item__filling-plan::before {
+  content: "";
+  position: absolute;
+  background: url(https://picua.org/images/2019/12/28/2352a3a7aa9db7ec5bf3eac3ec6dcb44.png);
+  top: 7px;
+  left: -25px;
+  width: 18px;
+  height: 18px;
+}
+.plan-card:nth-child(1) .item__filling-plan:nth-child(3)::before,
+.plan-card:nth-child(1) .item__filling-plan:nth-child(4)::before,
+.plan-card:nth-child(2) .item__filling-plan:nth-child(4)::before {
+  background: url(https://picua.org/images/2019/12/28/a0edac768ebd075f86ec40bf956c5323.png);
+  /* left: -25px;; */
+}
+.price__text-bottom {
+  width: 50%;
+  margin: 20px auto;
+  justify-content: space-between;
+}
+.price__text-bottom .main-btn {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.price__text-bottom .main-btn::before,
+.price__text-bottom .main-btn::after {
+  content: "";
+  background-color: #dadee7;
+  position: absolute;
+  top: 20px;
+  width: 226px;
+  height: 1px;
+}
+.price__text-bottom .main-btn::before {
+  left: -250px;
+}
+.price__text-bottom .main-btn::after {
+  right: -250px;
+}
+.price .text {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  background-color: #0e1a35;
+  height: 10vh;
+  padding: 0 14%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .text {
+  order: 1;
+}
+.wrapper__footer-list {
+  order: 2;
+  /* margin: 0 auto;
+  display: inline-block; */
+}
+
+.footer-list__nav {
+  display: flex;
+  margin: -10px 0 0 0;
+  /* order: 2; */
+}
+
+.item__footer-list {
+  margin-left: 30px;
+}
+.item__footer-list a {
+  font-size: 16px;
+  color: #8492af;
+}
+
+@media (max-width: 1200px) {
+  .home .main-title {
+    margin-top: 0px !important;
+  }
+  .main-subtitle {
+    margin-top: 0px !important;
+  }
+  .home .main-btn {
+    margin-top: 2%;
+  }
+  .task-info {
+    width: 100%;
+  }
+  .task-info .task-info__text {
+    font-size: 14px;
+  }
+  .powerfull__text .text {
+    line-height: 18px;
+  }
+  .plan-card {
+    width: 25%;
+  }
+}
+@media (max-width: 991px) {
+  .main-nav {
+    display: none;
+  }
+  .main-nav__mobile {
+    display: inline-block;
+  }
+  .opportunities {
+    height: 50vh;
+  }
+  .browser {
+    height: 50vh;
+  }
+  .item-opportunities img {
+    width: 55px;
+    height: 50px;
+  }
+  .item-opportunities__title {
+    font-size: 28px;
+  }
+  .item-opportunities:nth-child(2)::before {
+    left: -40px;
+  }
+  .item-opportunities:nth-child(2)::after {
+    right: -40px;
+  }
+  .browser-description,
+  .browser-img {
+    width: 50%;
+  }
+  .drag-end-drop {
+    height: 100vh;
+  }
+  .drag-end-drop__wrapper {
+    padding: 20px 0 0 0;
+    display: block;
+  }
+  .drag-end-drop__description {
+    padding: 0px;
+    width: 70%;
+    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .drag-end-drop__description .section__title {
+    margin-bottom: 24px;
+  }
+  .task-wrapper {
+    padding: 0 5%;
+    width: 100%;
+  }
+  .powerfull__block-info {
+    top: 8%;
+    width: 50%;
+  }
+  .powerfull__text {
+    padding: 10px 30% 0px 0%;
+  }
+  .powerfull__block-info:nth-child(2) .powerfull__text {
+    padding: 10px 0% 0px 30%;
+  }
+  .powerfull__text .text {
+    line-height: 17px;
+  }
+  .plan-card {
+    width: 28%;
+  }
+  .item__filling-plan {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .top-site {
+    height: 100vh;
+  }
+  .login-button {
+    width: 50px;
+  }
+  .home {
+    padding-top: 10%;
+  }
+  .home .main-btn {
+    margin-top: 5%;
+    width: 50%;
+  }
+  .opportunities {
+    padding: 8% 0%;
+  }
+  .opportunities .text {
+    display: none;
+  }
+  .browser-description__list {
+    display: none;
+  }
+  .progres {
+    width: 45%;
+  }
+  .completed {
+    width: 55%;
+  }
+  .progres-title,
+  .completed-title {
+    font-size: 24px;
+  }
+  .powerfull__description {
+    width: 75%;
+  }
+  .powerfull__description .section__title {
+    margin-bottom: 10px;
+  }
+  .price {
+    height: 100vh;
+    padding: 0px;
+  }
+
+  .wrapper__plan-card {
+    flex-wrap: wrap;
+    height: 45%;
+    margin: 0;
+  }
+  .plan-card {
+    margin-top: 5%;
+    min-width: 240px;
+    height: 80%;
+  }
+  .plan-card__title {
+    margin-bottom: 10px;
+  }
+  .plan-card__price {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  .price__text-bottom .text {
+    display: none;
+  }
+  .price__text-bottom {
+    width: 50%;
+    margin: 300px auto 0 auto;
+  }
+  .price__text-bottom .main-btn::before,
+  .price__text-bottom .main-btn::after {
+    width: 70%;
+  }
+  .price__text-bottom .main-btn::before {
+    left: -75%;
+  }
+  .price__text-bottom .main-btn::after {
+    right: -75%;
+  }
+  .wrapper__plan-card {
+    justify-content: space-around;
+    padding: 0 2%;
+  }
+  .plan-card {
+    width: 31%;
+    margin-right: 2%;
+  }
+  footer {
+    height: 15vh;
+    display: block;
+    text-align: center;
+    padding-top: 5%;
+  }
+  .wrapper__footer-list {
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .footer-list__nav {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  .item__footer-list a {
+    font-size: 24px;
+  }
+  footer .text {
+    font-size: 21px;
+  }
+}
+@media (max-width: 576px) {
+  /* .wrapper__drop-menu_active {
+    right: 0vw !important;
+  } */
+  .wrapper__drop-menu {
+    right: -30vw;
+    width: 30vw;
+  }
+  .home {
+    padding-top: 25%;
+  }
+  .item-opportunities:nth-child(2)::before {
+    left: -25px;
+  }
+  .item-opportunities:nth-child(2)::after {
+    right: -25px;
+  }
+  .item-opportunities__title {
+    font-size: 23px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .opportunities {
+    height: 35vh;
+  }
+  .browser {
+    display: block;
+    height: 65vh;
+    padding: 0 0 0 10%;
+  }
+  .browser-description,
+  .browser-img {
+    width: 100%;
+  }
+  .task-box {
+    padding: 8px;
+  }
+  .task-info .task-info__text {
+    font-size: 12px;
+  }
+  .task-box_done {
+    height: 56px;
+  }
+  .price {
+    height: 100%;
+  }
+  .plan-card {
+    margin-right: 0px;
+  }
+  .price__text-bottom {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .powerfull__content {
+    width: 100%;
+    margin: 0;
+  }
+  .wrapper-top-site,
+  .faetures,
+  .drag-end-drop,
+  .powerfull,
+  .opportunities,
+  .browser,
+  .drag-end-drop__wrapper,
+  footer {
+    height: 100%;
+  }
+  .powerfull__title {
+    font-size: 14px;
+  }
+  .powerfull__block-info:nth-child(1) {
+    padding-left: 10px;
+  }
+  .powerfull__block-info:nth-child(2) {
+    padding-right: 10px;
+  }
+  .price__text-bottom .main-btn::before,
+  .price__text-bottom .main-btn::after {
+    width: 55%;
+  }
+  .price__text-bottom .main-btn::before {
+    left: -60%;
+  }
+  .price__text-bottom .main-btn::after {
+    right: -60%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-nav__mobile {
+    margin-top: 20px;
+  }
+  .login-button {
+    width: 150px;
+  }
+  .btn__drop-menu {
+    padding-top: 14px;
+  }
+  .wrapper__drop-menu {
+    bottom: -150px;
+  }
+  .wrapper__drop-menu {
+    right: -50vw;
+    width: 50vw;
+  }
+  .home {
+    padding-top: 20%;
+  }
+  .progres-title::before,
+  .completed-title::before {
+    width: 0px;
+  }
+  .item-opportunities__title {
+    font-size: 18px;
+  }
+  .progres-title,
+  .completed-title {
+    font-size: 20px;
+  }
+  .powerfull__text {
+    padding: 10px 10% 0px 0%;
+  }
+  .powerfull__text .text {
+    font-size: 12px;
+  }
+  .powerfull__block-info:nth-child(2) .powerfull__text {
+    padding: 10px 0% 0px 10%;
+  }
+  .price__text-bottom .main-btn::before,
+  .price__text-bottom .main-btn::after {
+    width: 0;
+  }
+  footer {
+    padding: 10% 0%;
+  }
+  .item__footer-list {
+    margin-left: 15px;
+  }
+  .item__footer-list a {
+    font-size: 17px;
+  }
+  footer .text {
+    font-size: 17px;
+    margin: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .home {
+    margin-top: 20%;
+    padding: 0;
+  }
+  .drag-end-drop__description .text:nth-child(2) {
+    display: none;
+  }
+  .progres-title,
+  .completed-title {
+    font-size: 19px;
+  }
+  .leter {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .price__text-bottom .main-btn {
+    width: 150px;
+  }
+}
