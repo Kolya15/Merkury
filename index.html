@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="wrapper-top-site">
-      <div class="top-site">
+  <body id="home">
+    <div class="wrapper-top-site" >
+      <div class="top-site" >
         <header>
           <div class="wrapper-logo">
             <a href="#" class="logo"
@@ -20,17 +20,16 @@
           </div>
           <nav class="main-nav">
             <ul>
-              <li class="main-nav__item"><a href="features">Features</a></li>
-              <li class="main-nav__item"><a href="pricing">Pricing</a></li>
-              <li class="main-nav__item"><a href="blog">Blog</a></li>
-              <li class="main-nav__item"><a href="contact">Contact</a></li>
+              <li class="main-nav__item"><a href="#home" class="scroll-to">Home</a></li>
+              <li class="main-nav__item"><a href="#about"class="scroll-to">About</a></li>
+              <li class="main-nav__item"><a href="#psd" class="scroll-to">Template</a></li>
+              <li class="main-nav__item"><a href="#pricing" class="scroll-to">Pricing</a></li>
               <li class="main-nav__item">
                 <button class="login-button">Login</button>
               </li>
             </ul>
           </nav>
           <div class="main-nav__mobile">
-            
             <button class="login-button">Login</button>
             <button class="btn__drop-menu">
                 <span></span>
@@ -40,21 +39,21 @@
         <div class="wrapper__drop-menu">
           <nav class="drop-menu">
             <ul>
-              <li class="drop-menu__item"><a href="features">Features</a></li>
-              <li class="drop-menu__item"><a href="pricing">Pricing</a></li>
-              <li class="drop-menu__item"><a href="blog">Blog</a></li>
-              <li class="drop-menu__item"><a href="contact">Contact</a></li>
+              <li class="drop-menu__item"><a href="#home" class="scroll-to">Home</a></li>
+              <li class="drop-menu__item"><a href="#about"class="scroll-to">About</a></li>
+              <li class="drop-menu__item"><a href="#psd" class="scroll-to">Template</a></li>
+              <li class="drop-menu__item"><a href="#pricing" class="scroll-to">Pricing</a></li>
             </ul>
           </nav>
         </div>
-        <div class="home">
+        <div class="home" id="home">
           <h1 class="main-title">Grow Your business with Merkury</h1>
           <h2 class="main-subtitle">Your partner in crime!</h2>
           <button class="main-btn">Get started</button>
         </div>
       </div>
     </div>
-    <div class="faetures">
+    <div class="about" id="about">
       <section class="opportunities">
         <div class="item-opportunities">
           <img
@@ -201,20 +200,9 @@
             </div>
           </div>
         </div>
-        <!-- <div class="drag-end-drop__description">
-          <h2 class="section__title">Drag & Drop</h2>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p class="text">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div> -->
       </section>
     </div>
-    <div class="powerfull">
+    <div class="powerfull" id="psd">
       <div class="powerfull__description">
         <h2 class="section__title">Powerfull PSD Template</h2>
         <p class="text">
@@ -249,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="price">
+    <div class="price" id="pricing">
       <h2 class="section__title">Check our pricing!</h2>
       <div class="wrapper__plan-card">
         <div class="plan-card">
@@ -301,10 +289,13 @@
     <footer>
       <div class="wrapper__footer-list">
         <ul class="footer-list__nav">
-          <li class="item__footer-list"><a href="#">Pricing</a></li>
-          <li class="item__footer-list"><a href="#">Blog</a></li>
-          <li class="item__footer-list"><a href="#">Contact</a></li>
-          <li class="item__footer-list">
+          <li class="item__footer-list"><a href="#home" class="scroll-to">Home</a></li>
+          <li class="item__footer-list"><a href="#about"class="scroll-to">About</a></li>
+          <li class="item__footer-list"><a href="#psd" class="scroll-to">Template</a></li>
+          <li class="item__footer-list"><a href="#pricing" class="scroll-to">Pricing</a></li>
+        </ul>
+        <ul class="list-social">
+          <li class="item__footer-list sociall">
             <a href="#"
               ><img
                 src="https://picua.org/images/2019/12/27/a5a8d8fb10dc57ce8eacdfa7d6d13ccc.png"
